@@ -106,6 +106,7 @@ body {
 }
 .menu-link {
   color: var(--main-color);
+  padding: 24px 0;
 }
 .menu-link:hover,
 .menu-link:focus {
