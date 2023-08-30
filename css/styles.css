@@ -59,6 +59,7 @@ body {
 .page-header-container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
 }
 .page-navigation {
   display: flex;
@@ -66,7 +67,8 @@ body {
 }
 .contacts-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+  padding: 24px 0;
 }
 .logo-second-word {
   color: var(--main-color);
@@ -76,6 +78,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logotype {
   color: var(--logo-button-color);
@@ -88,8 +91,6 @@ body {
 }
 .page-header {
   background: #fff;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .menu-list {
   color: var(--main-color);
@@ -98,8 +99,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
-  column-gap: 40px;
-  margin-left: 76px;
+  gap: 40px;
+  padding: 24px 0;
 }
 .menu-link {
   color: var(--main-color);
@@ -136,8 +137,8 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   padding-bottom: 48px;
-  width: 496px;
   margin-left: auto;
+  max-width: 496px;
   margin-right: auto;
 }
 .order-service {
@@ -151,6 +152,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .order-service:hover,
 .order-service:focus {
@@ -159,17 +164,13 @@ body {
 /* Секція 2 */
 .about-us-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .about-us {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .about-us-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-start;
+  width: calc((100% - 72px) / 4);
 }
 .about-us-title {
   color: var(--main-color);
@@ -177,6 +178,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .about-us-text {
   color: var(--text-color);
@@ -188,6 +190,7 @@ body {
 /* Секція 3 */
 .team {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 .team-title {
   color: var(--main-color);
@@ -197,14 +200,11 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-top: 120px;
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 .team-list {
   display: flex;
-  column-gap: 24px;
-  padding-bottom: 120px;
+  gap: 24px;
 }
 .team-list-item {
   background: #fff;
@@ -213,7 +213,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
 }
 .team-list-fullname-text-container {
   display: flex;
@@ -221,7 +220,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  padding: 32px 0;
+}
+.team-list-img {
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-fullname {
   color: var(--main-color);
@@ -231,6 +233,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-list-text {
   color: var(--text-color);
@@ -276,8 +279,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-product {
@@ -286,6 +288,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: var(--text-color);
